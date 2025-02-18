@@ -1,4 +1,4 @@
-"AIRLINE_ID","NAME","ALIAS","IATA","ICAO","CLSGN","CTY","ACTV"
+"AIRLINE_ID","NAME","ALIAS","IATA","ICAO","CLSGN","CTRY","ACTV"
 -1,"Unknown",\N,"-","N/A",\N,\N,"Y"
 1,"Private flight",\N,"-","N/A","","","Y"
 2,"135 Airways",\N,"","GNL","GENERAL","United States","N"
