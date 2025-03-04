@@ -11,11 +11,17 @@ def distCalc(x, y):
     distance = gmaps.distance_matrix(x, y)['rows'][0]['elements'][0]
 
     try:
-        val = distance['distance']['text']
+        meters = distance['distance']['value']
     except:
-        val = r'\N'
-    
-    return(val)
+        meters = r'\N'
+
+    try:
+        seconds = distance['duration']['value']
+    except:
+        seconds = r'\N'
+
+    return(meters,seconds)
+
 
 
 def createDistanceData(data):
@@ -32,4 +38,4 @@ def createDistanceData(data):
         max = max + 10
         time.sleep(2)
 
-distCalc('Jorge Chávez International Airport', 'Patreksfjörður Airport')
+distCalc('Domodedovo International Airport', 'Kazan International Airport')
