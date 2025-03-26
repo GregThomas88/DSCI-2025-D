@@ -7550,7 +7550,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [48]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'../data/openFlightsRaw/zOpenFlightsDataDictionary.txt'</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
@@ -7700,7 +7700,7 @@ Route database
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#necessary imports</span>
@@ -7709,6 +7709,9 @@ Route database
 <span class="kn">import</span><span class="w"> </span><span class="nn">plotly.express</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">px</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">plotly.graph_objects</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">go</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">googlemaps</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">kaleido</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">plotly.io</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pio</span>
+<span class="n">pio</span><span class="o">.</span><span class="n">renderers</span><span class="o">.</span><span class="n">default</span> <span class="o">=</span> <span class="s2">"iframe"</span>
 </pre></div>
 </div>
 </div>
@@ -7732,7 +7735,7 @@ routes contains information about eligable routes between airports</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [21]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">airports_csv</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'../data/openFlightsRaw/airports.csv'</span><span class="p">)</span>
@@ -7758,7 +7761,7 @@ routes contains information about eligable routes between airports</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [22]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">airports_csv</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
@@ -7772,7 +7775,7 @@ routes contains information about eligable routes between airports</p>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[22]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[3]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -7906,7 +7909,7 @@ routes contains information about eligable routes between airports</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [23]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">routes_csv</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
@@ -7920,7 +7923,7 @@ routes contains information about eligable routes between airports</p>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[23]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[4]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -8035,7 +8038,7 @@ routes contains information about eligable routes between airports</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [24]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Verification that all of the identifier values are not null</span>
@@ -8071,7 +8074,7 @@ False
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [25]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Identifying type differences between the two airport_csv and routes_csv dataframes</span>
@@ -8103,7 +8106,7 @@ False
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [26]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Turning AIRPT_ID into a string for joining purposes</span>
@@ -8130,7 +8133,7 @@ This caused issues when originally joining the dataset.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [27]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Define a null value</span>
@@ -8161,7 +8164,7 @@ This caused issues when originally joining the dataset.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [28]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">airports_csv_Example</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'../data/openFlightsRaw/airports.csv'</span><span class="p">)</span>
@@ -8188,32 +8191,7 @@ This caused issues when originally joining the dataset.</p>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<div> <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_SVG"></script><script type="text/javascript">if (window.MathJax && window.MathJax.Hub && window.MathJax.Hub.Config) {window.MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}</script> <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
-<script charset="utf-8" src="https://cdn.plot.ly/plotly-3.0.0.min.js"></script> <div class="plotly-graph-div" id="73f66337-3543-4440-9b4f-d50b8d854831" style="height:525px; width:100%;"></div> <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("73f66337-3543-4440-9b4f-d50b8d854831")) {                    Plotly.newPlot(                        "73f66337-3543-4440-9b4f-d50b8d854831",                        [{"hovertemplate":"Last 1000 Airport Rows=%{x}\u003cbr\u003eAirport ID=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"","line":{"color":"#636efa","dash":"solid"},"marker":{"symbol":"circle"},"mode":"lines","name":"","orientation":"v","showlegend":false,"x":{"dtype":"i2","bdata":"KhorGiwaLRouGi8aMBoxGjIaMxo0GjUaNho3GjgaORo6GjsaPBo9Gj4aPxpAGkEaQhpDGkQaRRpGGkcaSBpJGkoaSxpMGk0aThpPGlAaURpSGlMaVBpVGlYaVxpYGlkaWhpbGlwaXRpeGl8aYBphGmIaYxpkGmUaZhpnGmgaaRpqGmsabBptGm4abxpwGnEachpzGnQadRp2GncaeBp5Gnoaexp8Gn0afhp\u002fGoAagRqCGoMahBqFGoYahxqIGokaihqLGowajRqOGo8akBqRGpIakxqUGpUalhqXGpgamRqaGpsanBqdGp4anxqgGqEaohqjGqQapRqmGqcaqBqpGqoaqxqsGq0arhqvGrAasRqyGrMatBq1GrYatxq4Grkauhq7GrwavRq+Gr8awBrBGsIawxrEGsUaxhrHGsgayRrKGssazBrNGs4azxrQGtEa0hrTGtQa1RrWGtca2BrZGtoa2xrcGt0a3hrfGuAa4RriGuMa5BrlGuYa5xroGuka6hrrGuwa7RruGu8a8BrxGvIa8xr0GvUa9hr3Gvga+Rr6Gvsa\u002fBr9Gv4a\u002fxoAGwEbAhsDGwQbBRsGGwcbCBsJGwobCxsMGw0bDhsPGxAbERsSGxMbFBsVGxYbFxsYGxkbGhsbGxwbHRseGx8bIBshGyIbIxskGyUbJhsnGygbKRsqGysbLBstGy4bLxswGzEbMhszGzQbNRs2GzcbOBs5GzobOxs8Gz0bPhs\u002fG0AbQRtCG0MbRBtFG0YbRxtIG0kbShtLG0wbTRtOG08bUBtRG1IbUxtUG1UbVhtXG1gbWRtaG1sbXBtdG14bXxtgG2EbYhtjG2QbZRtmG2cbaBtpG2obaxtsG20bbhtvG3AbcRtyG3MbdBt1G3Ybdxt4G3kbeht7G3wbfRt+G38bgBuBG4IbgxuEG4UbhhuHG4gbiRuKG4sbjBuNG44bjxuQG5EbkhuTG5QblRuWG5cbmBuZG5obmxucG50bnhufG6AboRuiG6MbpBulG6YbpxuoG6kbqhurG6wbrRuuG68bsBuxG7Ibsxu0G7Ubthu3G7gbuRu6G7sbvBu9G74bvxvAG8EbwhvDG8QbxRvGG8cbyBvJG8obyxvMG80bzhvPG9Ab0RvSG9Mb1BvVG9Yb1xvYG9kb2hvbG9wb3RveG98b4BvhG+Ib4xvkG+Ub5hvnG+gb6RvqG+sb7BvtG+4b7xvwG\u002fEb8hvzG\u002fQb9Rv2G\u002fcb+Bv5G\u002fob+xv8G\u002f0b\u002fhv\u002fGwAcARwCHAMcBBwFHAYcBxwIHAkcChwLHAwcDRwOHA8cEBwRHBIcExwUHBUcFhwXHBgcGRwaHBscHBwdHB4cHxwgHCEcIhwjHCQcJRwmHCccKBwpHCocKxwsHC0cLhwvHDAcMRwyHDMcNBw1HDYcNxw4HDkcOhw7HDwcPRw+HD8cQBxBHEIcQxxEHEUcRhxHHEgcSRxKHEscTBxNHE4cTxxQHFEcUhxTHFQcVRxWHFccWBxZHFocWxxcHF0cXhxfHGAcYRxiHGMcZBxlHGYcZxxoHGkcahxrHGwcbRxuHG8ccBxxHHIccxx0HHUcdhx3HHgceRx6HHscfBx9HH4cfxyAHIEcghyDHIQchRyGHIcciByJHIocixyMHI0cjhyPHJAckRySHJMclByVHJYclxyYHJkcmhybHJwcnRyeHJ8coByhHKIcoxykHKUcphynHKgcqRyqHKscrBytHK4crxywHLEcshyzHLQctRy2HLccuBy5HLocuxy8HL0cvhy\u002fHMAcwRzCHMMcxBzFHMYcxxzIHMkcyhzLHMwczRzOHM8c0BzRHNIc0xzUHNUc1hzXHNgc2RzaHNsc3BzdHN4c3xzgHOEc4hzjHOQc5RzmHOcc6BzpHOoc6xzsHO0c7hzvHPAc8RzyHPMc9Bz1HPYc9xz4HPkc+hz7HPwc\u002fRz+HP8cAB0BHQIdAx0EHQUdBh0HHQgdCR0KHQsdDB0NHQ4dDx0QHREdEh0THRQdFR0WHRcdGB0ZHRodGx0cHR0dHh0fHSAdIR0iHSMdJB0lHSYdJx0oHSkdKh0rHSwdLR0uHS8dMB0xHTIdMx00HTUdNh03HTgdOR06HTsdPB09HT4dPx1AHUEdQh1DHUQdRR1GHUcdSB1JHUodSx1MHU0dTh1PHVAdUR1SHVMdVB1VHVYdVx1YHVkdWh1bHVwdXR1eHV8dYB1hHWIdYx1kHWUdZh1nHWgdaR1qHWsdbB1tHW4dbx1wHXEdch1zHXQddR12HXcdeB15HXodex18HX0dfh1\u002fHYAdgR2CHYMdhB2FHYYdhx2IHYkdih2LHYwdjR2OHY8dkB2RHZIdkx2UHZUdlh2XHZgdmR2aHZsdnB2dHZ4dnx2gHaEdoh2jHaQdpR2mHacdqB2pHaodqx2sHa0drh2vHbAdsR2yHbMdtB21HbYdtx24Hbkduh27HbwdvR2+Hb8dwB3BHcIdwx3EHcUdxh3HHcgdyR3KHcsdzB3NHc4dzx3QHdEd0h3THdQd1R3WHdcd2B3ZHdod2x3cHd0d3h3fHeAd4R3iHeMd5B3lHeYd5x3oHekd6h3rHewd7R3uHe8d8B3xHfId8x30HfUd9h33Hfgd+R36Hfsd\u002fB39Hf4d\u002fx0AHgEeAh4DHgQeBR4GHgceCB4JHgoeCx4MHg0eDh4PHhAeER4="},"xaxis":"x","y":{"dtype":"i2","bdata":"riawJrEmzybRJtIm0ybWJtcmISdJJ00nTidVJ2AnaSdwJ3Yndyd4J3kneid7J34ngieEJ4UniSeKJ4snkCeRJ5InkyeUJ5UnlieXJ5knmiebJ5wnnSeeJ6AnoSekJ6UnpyeqJ6snrCetJ64nsCexJ7Insye0J7Untie5J7snvSfCJ8gnySfKJ+EnNyh4KHsogiiDKIooMCkxKXMpeSl6KeMp+Cn5Kfop+yn8Kf4p\u002fykAKgEqGCooKioqMCoyKjMqNCpPKrYquSq6KrsqvCq9Kr4qvyrFKscqyCr8Kv0qACsBKwIrAysEKwkrCisLKwwrDSsOKxYrFysYKxsrHisoKykrKystKy4rLys7KzwrPSs+Kz8rQCtBK0IrQytEK0UrRitHK0grSStKK0wrTitPK1ArUStSK1MrVCtVK1YrVytYK1krWitbK1wrXSteK18rZitnK3creSt7K3wrfSt+K4MrhCuFK4YrhyuIK4kriiuRK6IrpyuoK6krqiurK6wrrSuuK7kruiu7K74rvyvAK8ErwivDK8QrxSvGK8cryCvJK8oryyvMK90r3ivrK\u002fcr+Sv6KwQsBSwGLAgsCSwKLA0sGCwaLBssHCwdLB8sIywwLEAsQyxELFgsWSxaLFssXCxdLHosfSyJLI4sjyynLKksrCyuLLws0SzXLOos6ywELRktPy12LXwtgC2BLYotmS2kLaUttC22LcEtwi3FLcYtxy3ILcktyi3XLdkt2i3bLdwt3i3fLeAt4S3jLeQt5S3mLect6C3pLeot6y3sLe0t7i3vLfAt8S3yLfMt9C31LfYt9y34Lfkt+i37Lfwt\u002fS3+Lf8tAC4BLgIuAy4ELgUuBi4HLgguCS4KLgsuDC4NLg4uDy4QLhEuEi4TLhQuFS4WLhcuGC4ZLhouGy4cLh0uHi4fLiAuIS4iLiMuJC4lLiYuJy4oLikuKi4rLiwuLS4uLi8uMC4xLjIuMy40LjUuNi43LjguOS46LjsuPC49Lj4uPy5ALkEuQi5DLkQuRS5GLkcuSC5JLkouSy5MLk0uTi5PLlAuUS5SLlMuVC5VLlYuVy5YLlkuWi5bLlwuXS5eLl8uYC5hLmIuYy5kLmUuZi5nLmguaS5qLmsubC5tLm4uby5wLnEuci5zLnQudS52LncueC55Lnouey58Ln0ufi5\u002fLoAugS6CLoMuhC6FLoYuhy6ILokuii6LLowujS6OLo8ukC6RLpIuky6ULpUuli6XLpgumS6aLpsunC6dLp4uny6gLqEuoi6jLqQupS6mLqcuqC6pLqouqy6sLq0uri6vLrAusS6yLrMutC61LrYuty64Lrkuui67LrwuvS6+Lr8uwC7BLsIuwy7ELsUuxi7HLsguyS7KLssuzC7NLs4uzy7QLtEu0i7TLtQu1S7WLtcu2C7ZLtou2y7cLt0u3i7fLuAu4S7iLuMu5C7lLuYu5y7oLuku6i7rLuwu7S7uLu8u8C7xLvIu8y70LvUu9i73Lvgu+S76Lvsu\u002fC79Lv4u\u002fy4ALwEvAi8DLwQvBS8GLwcvCC8JLwovCy8MLw0vDi8PLxAvES8SLxMvFC8VLxYvFy8YLxkvGi8bLyUvNy86L0AvSC9KL00vTi9lL4MvhS+ML5Yvly+ZL7kvui+7LxYwFzA0MEgwSTBnMGgwnDCdMLUwtjDwMEoxSzFgMYAxgTGDMYQx\u002fDEsMjgySTJ2MncyeTKDMo0ykTKSMpQyljKXMp0ynjKhMrMytDK4MrsyzDLOMtEy0zLYMtoy2zLcMt4y3zLoMgozDTMQMxIzEzMVMxYzFzMYMykzKjMyMzgzOjNAM0EzQzNEM0YzRzNKM0szTzNRM1IzUzNWM1gzYjNjM2QzZjN4M3kzfDN\u002fM4QzhTOIM4kzjzOZM5ozmzOcM54znzOrM60zrjOxM7szwDPBM8kzzDPPM9Ez0jPTM9Qz1TPXM\u002foz+zP9M\u002f8zAzQWNBc0GDQbNB00HjQgNCI0IzQqNCs0LDQtNC40LzQwNDE0MzQ0NDU0NjQ3NDg0OTQ6NDs0PDQ9ND40PzRBNEI0QzRENEU0RjRHNEg0STRKNEs0TDRNNE40VTRWNFc0WDRZNFo0WzRcNF00YzRkNGc0aDRtNG40bzRwNHE0cjRzNHQ0dTR2NHc0eDR5NHs0fDR9NH40fzSHNIg0izSMNI00jjSPNJA0kTSSNJQ0lzSZNJo0mzScNJ00njSfNKA0oTSiNKQ0pTSmNKc0qDSpNKo0qzStNK80sDSxNLI0szS0NLU0tjS4NLk0ujS7NLw0vjTHNMk0yjTQNNE01TTZNNo03DTfNOI05DTnNOg06TTqNOw07jTvNPA08TT5NPo0\u002fDT+NAQ1BTUHNQw1DTUPNRA1GDUZNRs1HTUeNR81IDUhNSI1JjUnNSg1KTUqNTU1NjU3NTg1OTU6NTs1PDU9NT41PzVANUM1RDVKNUs1TzVQNVE1ZDVlNWc1bTVxNXM1dDV3NX41fzWANYs1jzWQNZE1kjWTNZQ1lTWWNZc1mDWZNZo1mzWcNZ01njWnNbg1ujW8Nb01vjW\u002fNcA1wjXDNcU1yzXMNc010TXgNeE16jXrNe018DX9NQU2BjY4Njk2QzYGNwc3CDcJNwo3CzcMNw03DzcQNxE3EjcTNxQ3FTcWNxc3GDcZNxo3GzccNx03Hjc="},"yaxis":"y","type":"scatter"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"Last 1000 Airport Rows"}},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"Airport ID"}},"legend":{"tracegroupgap":0},"title":{"text":"Airport IDs are not in numerical order"}},                        {"responsive": true}                    ).then(function(){
-                            
-var gd = document.getElementById('73f66337-3543-4440-9b4f-d50b8d854831');
-var x = new MutationObserver(function (mutations, observer) {{
-        var display = window.getComputedStyle(gd).display;
-        if (!display || display === 'none') {{
-            console.log([gd, 'removed!']);
-            Plotly.purge(gd);
-            observer.disconnect();
-        }}
-}});
-
-// Listen for the removal of the full notebook cells
-var notebookContainer = gd.closest('#notebook-container');
-if (notebookContainer) {{
-    x.observe(notebookContainer, {childList: true});
-}}
-
-// Listen for the clearing of the current output cell
-var outputEl = gd.closest('.output');
-if (outputEl) {{
-    x.observe(outputEl, {childList: true});
-}}
-
-                        })                };            </script> </div>
+<iframe allowfullscreen="" frameborder="0" height="545px" scrolling="no" src="iframe_figures/figure_9.html" width="100%"></iframe>
 </div>
 </div>
 </div>
@@ -8223,7 +8201,7 @@ if (outputEl) {{
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [40]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Identifying size of routes data, to ensure size stays the same or is less afterwards</span>
@@ -8238,7 +8216,7 @@ if (outputEl) {{
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[40]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>67240</pre>
 </div>
@@ -8263,7 +8241,7 @@ if (outputEl) {{
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [38]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">routeDistSrc</span> <span class="o">=</span> <span class="n">routes_csv</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">airports_csv</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">'inner'</span><span class="p">,</span> <span class="n">left_on</span><span class="o">=</span><span class="s1">'SRC_AIRPT_ID'</span><span class="p">,</span> <span class="n">right_on</span><span class="o">=</span><span class="s1">'AIRPT_ID'</span><span class="p">)</span>
@@ -8294,7 +8272,7 @@ if (outputEl) {{
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [41]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Verified there are less rows now, due to inner join</span>
@@ -8309,7 +8287,7 @@ if (outputEl) {{
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[41]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>66771</pre>
 </div>
@@ -8321,7 +8299,7 @@ if (outputEl) {{
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [43]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Saving off the combined dataframe</span>
@@ -8338,7 +8316,7 @@ if (outputEl) {{
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[43]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[13]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -8517,7 +8495,7 @@ if (outputEl) {{
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [59]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">routeDist</span><span class="p">[</span><span class="s1">'countVal'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
@@ -8548,6 +8526,9 @@ if (outputEl) {{
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<iframe allowfullscreen="" frameborder="0" height="545px" scrolling="no" src="iframe_figures/figure_14.html" width="100%"></iframe>
+</div>
 </div>
 </div>
 </div>
@@ -8568,7 +8549,7 @@ if (outputEl) {{
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [51]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">airportCnt</span><span class="p">[</span><span class="n">airportCnt</span><span class="p">[</span><span class="s1">'SRCCNT'</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">800</span><span class="p">]</span>
@@ -8582,7 +8563,7 @@ if (outputEl) {{
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[51]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[15]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -8664,7 +8645,7 @@ It looks like China and the United States have the most route data</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [58]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">srcCtryCnt</span> <span class="o">=</span> <span class="n">airportCnt</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">'CTRY'</span><span class="p">)[</span><span class="s1">'SRCCNT'</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
@@ -8689,6 +8670,9 @@ It looks like China and the United States have the most route data</p>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<iframe allowfullscreen="" frameborder="0" height="545px" scrolling="no" src="iframe_figures/figure_16.html" width="100%"></iframe>
+</div>
 </div>
 </div>
 </div>
@@ -8708,7 +8692,7 @@ It looks like China and the United States have the most route data</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [67]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">ctrys</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'United States'</span><span class="p">,</span> <span class="s1">'China'</span><span class="p">,</span> <span class="s1">'Spain'</span><span class="p">,</span> <span class="s1">'United Kingdom'</span><span class="p">,</span> <span class="s1">'Germany'</span><span class="p">]</span>
@@ -8737,6 +8721,9 @@ It looks like China and the United States have the most route data</p>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<iframe allowfullscreen="" frameborder="0" height="545px" scrolling="no" src="iframe_figures/figure_17.html" width="100%"></iframe>
+</div>
 </div>
 </div>
 </div>
@@ -8778,7 +8765,7 @@ It looks like China and the United States have the most route data</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [69]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Utilizing the file that was created earlier</span>
@@ -8813,7 +8800,7 @@ It looks like China and the United States have the most route data</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [72]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [19]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Merging the destination and source routes to ideall capture data that includes international sources</span>
@@ -8831,7 +8818,7 @@ It looks like China and the United States have the most route data</p>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[72]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[19]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>15519</pre>
 </div>
@@ -8843,7 +8830,7 @@ It looks like China and the United States have the most route data</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [73]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Verification that there are no duplicates amongst the data</span>
@@ -8860,7 +8847,7 @@ It looks like China and the United States have the most route data</p>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[73]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[20]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>15519</pre>
 </div>
@@ -8872,7 +8859,7 @@ It looks like China and the United States have the most route data</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [74]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [21]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#re-using variable above that was used to show concat and outer join provide similar data</span>
@@ -8887,7 +8874,7 @@ It looks like China and the United States have the most route data</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [75]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [22]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#A function to capture the data from Google's distance matrix API</span>
@@ -8935,7 +8922,7 @@ It looks like China and the United States have the most route data</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [76]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [23]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">permSeriesM</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'../data/meters.csv'</span><span class="p">)</span>
@@ -8947,7 +8934,7 @@ It looks like China and the United States have the most route data</p>
 <span class="n">usRoutes</span><span class="p">[</span><span class="s2">"seconds"</span><span class="p">]</span> <span class="o">=</span> <span class="n">secondsSeries</span>
 <span class="n">usRoutes</span><span class="p">[</span><span class="s2">"meters"</span><span class="p">]</span> <span class="o">=</span> <span class="n">metersSeries</span>
 
-<span class="n">usRoutes</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">'../data/usRoutes.csv'</span><span class="p">)</span>
+<span class="c1">#usRoutes.to_csv('../data/usRoutes.csv')</span>
 </pre></div>
 </div>
 </div>
@@ -8960,7 +8947,7 @@ It looks like China and the United States have the most route data</p>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>C:\Users\thoma\AppData\Local\Temp\ipykernel_8360\1109128035.py:7: SettingWithCopyWarning:
+<pre>C:\Users\thoma\AppData\Local\Temp\ipykernel_24796\894388009.py:7: SettingWithCopyWarning:
 
 
 A value is trying to be set on a copy of a slice from a DataFrame.
@@ -8968,7 +8955,7 @@ Try using .loc[row_indexer,col_indexer] = value instead
 
 See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
 
-C:\Users\thoma\AppData\Local\Temp\ipykernel_8360\1109128035.py:8: SettingWithCopyWarning:
+C:\Users\thoma\AppData\Local\Temp\ipykernel_24796\894388009.py:8: SettingWithCopyWarning:
 
 
 A value is trying to be set on a copy of a slice from a DataFrame.
@@ -8986,7 +8973,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [78]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [24]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">usRoutes</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'../data/usRoutes.csv'</span><span class="p">)</span>
@@ -9002,7 +8989,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[78]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[24]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -9123,7 +9110,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [80]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [25]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">airports</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'../data/openFlightsRaw/airports.csv'</span><span class="p">)</span>
@@ -9187,6 +9174,9 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<iframe allowfullscreen="" frameborder="0" height="545px" scrolling="no" src="iframe_figures/figure_25.html" width="100%"></iframe>
+</div>
 </div>
 </div>
 </div>
@@ -9206,10 +9196,14 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [81]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [26]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">nullVal</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">"\N"</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">plotly.express</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">px</span>
+
+<span class="n">usRoutes</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'../data/usRoutes.csv'</span><span class="p">)</span>
+
+<span class="n">nullVal</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">"\N"</span>
 <span class="n">usRoutes</span> <span class="o">=</span> <span class="n">usRoutes</span><span class="p">[</span><span class="n">usRoutes</span><span class="p">[</span><span class="s1">'meters'</span><span class="p">]</span> <span class="o">!=</span> <span class="n">nullVal</span><span class="p">]</span>
 
 <span class="n">usRoutes</span><span class="p">[</span><span class="s1">'meters'</span><span class="p">]</span> <span class="o">=</span> <span class="n">usRoutes</span><span class="p">[</span><span class="s1">'meters'</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
@@ -9253,9 +9247,15 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<iframe allowfullscreen="" frameborder="0" height="545px" scrolling="no" src="iframe_figures/figure_26.html" width="100%"></iframe>
+</div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<iframe allowfullscreen="" frameborder="0" height="545px" scrolling="no" src="iframe_figures/figure_26.html" width="100%"></iframe>
+</div>
 </div>
 </div>
 </div>
@@ -9277,7 +9277,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [84]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [27]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">plotly.graph_objects</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">go</span>
@@ -9331,6 +9331,9 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<iframe allowfullscreen="" frameborder="0" height="545px" scrolling="no" src="iframe_figures/figure_27.html" width="100%"></iframe>
+</div>
 </div>
 </div>
 </div>
@@ -9339,7 +9342,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [86]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [28]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">plotly.graph_objects</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">go</span>
@@ -9393,6 +9396,9 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<iframe allowfullscreen="" frameborder="0" height="545px" scrolling="no" src="iframe_figures/figure_28.html" width="100%"></iframe>
+</div>
 </div>
 </div>
 </div>
@@ -9412,7 +9418,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [87]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [29]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">usRoutes</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'../data/usRoutes.csv'</span><span class="p">)</span>
@@ -9444,6 +9450,9 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<iframe allowfullscreen="" frameborder="0" height="545px" scrolling="no" src="iframe_figures/figure_29.html" width="100%"></iframe>
+</div>
 </div>
 </div>
 </div>
@@ -9464,7 +9473,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [30]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">plotly.graph_objects</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">go</span>
@@ -9520,6 +9529,9 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<iframe allowfullscreen="" frameborder="0" height="545px" scrolling="no" src="iframe_figures/figure_30.html" width="100%"></iframe>
+</div>
 </div>
 </div>
 </div>
@@ -9551,7 +9563,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [31]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.cluster</span><span class="w"> </span><span class="kn">import</span> <span class="n">KMeans</span>
@@ -9586,7 +9598,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [32]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">inertiaList</span> <span class="o">=</span> <span class="p">[]</span>
@@ -9616,7 +9628,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [33]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">inertiaDF</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">inertiaList</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">'Inertias'</span><span class="p">])</span>
@@ -9633,6 +9645,9 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<iframe allowfullscreen="" frameborder="0" height="545px" scrolling="no" src="iframe_figures/figure_33.html" width="100%"></iframe>
+</div>
 </div>
 </div>
 </div>
@@ -9653,7 +9668,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [34]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">inertiaDF</span><span class="p">[</span><span class="s1">'InertiasSquared'</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">inertiaDF</span><span class="p">[</span><span class="s1">'Inertias'</span><span class="p">])</span>
@@ -9670,6 +9685,9 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<iframe allowfullscreen="" frameborder="0" height="545px" scrolling="no" src="iframe_figures/figure_34.html" width="100%"></iframe>
+</div>
 </div>
 </div>
 </div>
@@ -9689,7 +9707,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [35]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">airportsData</span><span class="p">[</span><span class="s1">'cluster'</span><span class="p">]</span> <span class="o">=</span> <span class="n">KMeans</span><span class="p">(</span><span class="n">n_clusters</span> <span class="o">=</span> <span class="mi">8</span><span class="p">,</span> <span class="n">random_state</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">n_init</span> <span class="o">=</span> <span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="n">fit_predict</span><span class="p">(</span><span class="n">airportsCoords</span><span class="p">)</span>
@@ -9708,7 +9726,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>C:\Users\thoma\AppData\Local\Temp\ipykernel_12312\1555511578.py:1: SettingWithCopyWarning:
+<pre>C:\Users\thoma\AppData\Local\Temp\ipykernel_24796\1555511578.py:1: SettingWithCopyWarning:
 
 
 A value is trying to be set on a copy of a slice from a DataFrame.
@@ -9716,7 +9734,7 @@ Try using .loc[row_indexer,col_indexer] = value instead
 
 See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
 
-C:\Users\thoma\AppData\Local\Temp\ipykernel_12312\1555511578.py:4: SettingWithCopyWarning:
+C:\Users\thoma\AppData\Local\Temp\ipykernel_24796\1555511578.py:4: SettingWithCopyWarning:
 
 
 A value is trying to be set on a copy of a slice from a DataFrame.
@@ -9746,7 +9764,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [21]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [36]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">plotly.graph_objects</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">go</span>
@@ -9785,6 +9803,9 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<iframe allowfullscreen="" frameborder="0" height="545px" scrolling="no" src="iframe_figures/figure_36.html" width="100%"></iframe>
+</div>
 </div>
 </div>
 </div>
@@ -9793,7 +9814,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [22]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [37]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">airportsData</span><span class="p">[</span><span class="s1">'cluster'</span><span class="p">]</span> <span class="o">=</span> <span class="n">KMeans</span><span class="p">(</span><span class="n">n_clusters</span> <span class="o">=</span> <span class="mi">22</span><span class="p">,</span> <span class="n">random_state</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">n_init</span> <span class="o">=</span> <span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="n">fit_predict</span><span class="p">(</span><span class="n">airportsCoords</span><span class="p">)</span>
@@ -9811,7 +9832,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>C:\Users\thoma\AppData\Local\Temp\ipykernel_12312\1974205059.py:1: SettingWithCopyWarning:
+<pre>C:\Users\thoma\AppData\Local\Temp\ipykernel_24796\1974205059.py:1: SettingWithCopyWarning:
 
 
 A value is trying to be set on a copy of a slice from a DataFrame.
@@ -9819,7 +9840,7 @@ Try using .loc[row_indexer,col_indexer] = value instead
 
 See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
 
-C:\Users\thoma\AppData\Local\Temp\ipykernel_12312\1974205059.py:3: SettingWithCopyWarning:
+C:\Users\thoma\AppData\Local\Temp\ipykernel_24796\1974205059.py:3: SettingWithCopyWarning:
 
 
 A value is trying to be set on a copy of a slice from a DataFrame.
@@ -9849,7 +9870,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [23]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [38]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">plotly.graph_objects</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">go</span>
@@ -9889,6 +9910,9 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<iframe allowfullscreen="" frameborder="0" height="545px" scrolling="no" src="iframe_figures/figure_38.html" width="100%"></iframe>
+</div>
 </div>
 </div>
 </div>
@@ -9934,7 +9958,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [25]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [39]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.cluster</span><span class="w"> </span><span class="kn">import</span> <span class="n">DBSCAN</span>
@@ -9977,7 +10001,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [26]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [40]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">itemList</span> <span class="o">=</span> <span class="p">[]</span>
@@ -10008,7 +10032,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [27]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [41]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">itemDF</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">'Epislon'</span><span class="p">:</span> <span class="n">epsilonList</span><span class="p">,</span> <span class="s1">'Clusters'</span><span class="p">:</span> <span class="n">itemList</span><span class="p">})</span>
@@ -10025,6 +10049,9 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<iframe allowfullscreen="" frameborder="0" height="545px" scrolling="no" src="iframe_figures/figure_41.html" width="100%"></iframe>
+</div>
 </div>
 </div>
 </div>
@@ -10033,7 +10060,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [28]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [42]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">itemList</span> <span class="o">=</span> <span class="p">[]</span>
@@ -10063,7 +10090,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [29]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [43]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">itemDF</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">'Epislon'</span><span class="p">:</span> <span class="n">epsilonList</span><span class="p">,</span> <span class="s1">'Clusters'</span><span class="p">:</span> <span class="n">itemList</span><span class="p">})</span>
@@ -10080,6 +10107,9 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<iframe allowfullscreen="" frameborder="0" height="545px" scrolling="no" src="iframe_figures/figure_43.html" width="100%"></iframe>
+</div>
 </div>
 </div>
 </div>
@@ -10088,7 +10118,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [30]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [44]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">airportsData</span><span class="p">[</span><span class="s1">'densityCluster'</span><span class="p">]</span> <span class="o">=</span> <span class="n">DBSCAN</span><span class="p">(</span><span class="n">eps</span> <span class="o">=</span> <span class="mf">0.01569</span><span class="p">,</span> <span class="n">min_samples</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="n">metric</span> <span class="o">=</span> <span class="s1">'haversine'</span><span class="p">)</span><span class="o">.</span><span class="n">fit_predict</span><span class="p">((</span><span class="n">np</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">airportsCoords</span><span class="p">)))</span>
@@ -10108,7 +10138,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>C:\Users\thoma\AppData\Local\Temp\ipykernel_12312\3829614065.py:1: SettingWithCopyWarning:
+<pre>C:\Users\thoma\AppData\Local\Temp\ipykernel_24796\3829614065.py:1: SettingWithCopyWarning:
 
 
 A value is trying to be set on a copy of a slice from a DataFrame.
@@ -10116,7 +10146,7 @@ Try using .loc[row_indexer,col_indexer] = value instead
 
 See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
 
-C:\Users\thoma\AppData\Local\Temp\ipykernel_12312\3829614065.py:4: SettingWithCopyWarning:
+C:\Users\thoma\AppData\Local\Temp\ipykernel_24796\3829614065.py:4: SettingWithCopyWarning:
 
 
 A value is trying to be set on a copy of a slice from a DataFrame.
@@ -10124,7 +10154,7 @@ Try using .loc[row_indexer,col_indexer] = value instead
 
 See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
 
-C:\Users\thoma\AppData\Local\Temp\ipykernel_12312\3829614065.py:5: SettingWithCopyWarning:
+C:\Users\thoma\AppData\Local\Temp\ipykernel_24796\3829614065.py:5: SettingWithCopyWarning:
 
 
 A value is trying to be set on a copy of a slice from a DataFrame.
@@ -10154,7 +10184,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [33]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [45]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Figure</span><span class="p">()</span>
@@ -10193,6 +10223,9 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<iframe allowfullscreen="" frameborder="0" height="545px" scrolling="no" src="iframe_figures/figure_45.html" width="100%"></iframe>
+</div>
 </div>
 </div>
 </div>
@@ -10212,7 +10245,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [36]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [46]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">airportsDataDBScan</span> <span class="o">=</span> <span class="n">airportsData</span>
@@ -10255,6 +10288,9 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<iframe allowfullscreen="" frameborder="0" height="545px" scrolling="no" src="iframe_figures/figure_46.html" width="100%"></iframe>
+</div>
 </div>
 </div>
 </div>
@@ -10287,7 +10323,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [47]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">washingtonCluster</span> <span class="o">=</span> <span class="n">usRoutes</span><span class="p">[</span><span class="n">usRoutes</span><span class="p">[</span><span class="s1">'DESTIN_AIRPT_ID'</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">airportsDataDBScan</span><span class="p">[</span><span class="n">airportsDataDBScan</span><span class="p">[</span><span class="s1">'densityCluster'</span><span class="p">]</span> <span class="o">==</span> <span class="mi">6</span><span class="p">][</span><span class="s1">'AIRPT_ID'</span><span class="p">]))]</span>
@@ -10306,7 +10342,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[47]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
