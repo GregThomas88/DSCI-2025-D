@@ -7,6 +7,6 @@ Group D: Repo Table of Contents
 3. Linear Programming:
     a. machineLearning/linearProg.ipynb
 4. Machine Learning Competition Files:
-    a. MSCOMP/
+    a. DSCOMP/
 5. Starting Data Sets
     a. OpenFlightsRaw/
