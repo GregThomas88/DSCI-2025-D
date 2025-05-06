@@ -1,8 +1,8 @@
 Group D: Repo Table of Contents
 
 1. EDA Changes:
-    a. 
+    a. EDA/
 2. Machine Learning Changes:
-    a.
+    a. machineLearning/
 3. Linear Programming:
-    a. linearProg.ipynb
+    a. machineLearning/linearProg.ipynb
